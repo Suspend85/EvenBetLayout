@@ -1,0 +1,241 @@
+@media (max-width: 1200px) {
+   .container {
+      max-width: 960px;
+   }
+   .popupmaxi {
+      &__column {
+         padding: 0 30px;
+      }
+   }
+   .title {
+      &_fz24 {
+         font-size: 22px;
+      }
+      &_fz22 {
+         font-size: 20px;
+      }
+   }
+}
+
+@media (max-width: 992px) {
+   .container {
+      max-width: 720px;
+   }
+   .popupmaxi {
+      &__column {
+         padding: 0 20px;
+      }
+   }
+   .title {
+      &_fz24 {
+         font-size: 18px;
+      }
+      &_fz22 {
+         font-size: 16px;
+      }
+      &_fz20 {
+         font-size: 15px;
+      }
+   }
+   .btn {
+      --btn-info-size: 40px;
+      --btn-option-arrow-size: 20px;
+      &__option {
+         font-size: 16px;
+      }
+   }
+   #number {
+      width: 85px;
+   }
+   .item {
+      margin: 0 15px;
+   }
+   .ui-slider {
+      width: calc(100% - 120px);
+      .ui-slider-handle {
+         top: -12px;
+         width: 32px;
+         height: 32px;
+      }
+   }
+   .ui-slider-horizontal {
+      .ui-slider-handle {
+         margin-left: -0.8em;
+      }
+   }
+   input[type='checkbox'] {
+      --check-size: 35px;
+   }
+}
+
+@media (max-width: 768px) {
+   .container {
+      max-width: 540px;
+      min-height: 400px;
+   }
+   .popupmaxi {
+      &__wrapper {
+         padding-top: 18px;
+         row-gap: 18px;
+      }
+      &__column {
+         padding: 0 12px;
+      }
+   }
+   .title {
+      &_fz24 {
+         font-size: 15px;
+      }
+      &_fz22 {
+         font-size: 14px;
+      }
+      &_fz20 {
+         font-size: 12px;
+      }
+   }
+   .btn {
+      --btn-height: 42px;
+      --btn-info-size: 42px;
+      border-radius: 12px;
+      &__option {
+         font-size: 16px;
+         line-height: 16px;
+         padding-left: 30px;
+         span {
+            &:after {
+               top: -8px;
+               left: 80px;
+            }
+         }
+      }
+      &__info {
+         border-radius: 100%;
+      }
+   }
+   .inputs {
+      width: 50px;
+      height: 35px;
+   }
+   #number {
+      width: 60px;
+   }
+   .item {
+      --plusminus-size: 18px;
+      margin: 0 12px;
+   }
+   input[type='checkbox'] {
+      --check-size: 33px;
+   }
+   input[type='checkbox']:not(.switch):after {
+      width: 25%;
+      height: 65%;
+      border: 5px solid #000;
+      border-top: 0;
+      border-left: 0;
+   }
+
+   .divider {
+      margin-top: 3px;
+      margin-bottom: 6px;
+   }
+   .ui-slider {
+      margin-left: 0.5em;
+      margin-right: 0.4em;
+      .ui-slider-handle {
+         top: -9px;
+         width: 26px;
+         height: 26px;
+      }
+   }
+   .ui-slider-horizontal {
+      .ui-slider-handle {
+         margin-left: -0.7em;
+      }
+   }
+}
+
+@media (max-width: 576px) {
+   .container {
+      width: 100%;
+      min-width: 200px;
+   }
+   .title {
+      &_fz24 {
+         font-size: 20px;
+      }
+      &_fz22 {
+         font-size: 18px;
+      }
+      &_fz20 {
+         font-size: 18px;
+      }
+   }
+   .popupmaxi {
+      &__wrapper {
+         grid-template-columns: repeat(1, minmax(230px, auto));
+         grid-template-rows: repeat(3, minmax(64px, auto));
+         grid-auto-rows: 1fr;
+      }
+      &__btn-finish {
+         grid-column: 1/2;
+         grid-row: 3/4;
+      }
+      &__column {
+         padding: 0 10px;
+         &:nth-child(2) {
+            border: none;
+            box-shadow: none;
+         }
+      }
+   }
+   .divider {
+      margin-top: 8px;
+      margin-bottom: 12px;
+   }
+   .inputs {
+      width: 74px;
+      height: 42px;
+   }
+   #number {
+      width: 94px;
+   }
+   .btn {
+      --btn-height: 45px;
+      --btn-info-size: 45px;
+      &__option {
+         font-size: 18px;
+         line-height: 18px;
+         min-width: 200px;
+         text-align: center;
+         padding-left: 0px;
+         span {
+            &:after {
+               top: 0px;
+               left: auto;
+            }
+         }
+      }
+      &__finish {
+         min-width: 100px;
+      }
+   }
+
+   input[type='checkbox'] {
+      --check-size: 35px;
+   }
+   input[type='checkbox']:not(.switch):after {
+      width: 30%;
+      height: 65%;
+   }
+   .item {
+      --plusminus-size: 23px;
+      margin: 0 25px;
+   }
+   .ui-slider {
+      .ui-slider-handle {
+         top: -12px;
+         width: 32px;
+         height: 32px;
+      }
+   }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>TestEvenBet</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png" />
+      <link rel="icon" href="icons/favicon/favicon.ico" type="image/x-icon" />
+      <link rel="manifest" href="icons/favicon/site.webmanifest.json" />
+      <link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+
+      <meta property="og:title" content="EvenBet Gaming" />
+      <meta property="og:site_name" content="EvenBet Gaming" />
+      <meta property="og:url" content="https://testevenbet.dmikrop.ru/" />
+      <meta
+         property="og:description"
+         content="Сильная комбинация профессионалов
+Те, кто делает ставки и выигрывают, чувствуют сильное воодушевление, а мы в свою очередь получаем наибольшее удовольствие от создания игр в покер."
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://cdn.pixabay.com/photo/2020/04/06/13/41/chips-5009744_1280.png" />
+      <meta
+         property="og:image"
+         content="https://logincasino.com/uploads/gallery/42076/thumbs/o750_400_optim_m_df78e8f47c261082c49d754acc017fd7.jpg"
+      />
+
+      <link rel="stylesheet" href="css/style.min.css" />
+   </head>
+   <body>
+      <section class="popupmaxi">
+         <div class="container">
+            <div class="popupmaxi__wrapper">
+               <div class="popupmaxi__column">
+                  <h3 class="popupmaxi__title title title_fz24">Входной взнос</h3>
+                  <div class="popupmaxi__descr">
+                     <img src="icons/logo_chip.png" alt="chip" />
+                     <div>
+                        <div class="popupmaxi__num title title_fz22">5/10</div>
+                        <div class="popupmaxi__name title title_fz22">ФЛ Холдем</div>
+                     </div>
+                  </div>
+                  <div class="popupmaxi__funds title title_fz22">Доступно средств: <span>2609</span></div>
+                  <div class="popupmaxi__inputblock">
+                     <div class="title title_fz24">
+                        <input class="inputs" type="text" min="0" value="1305" id="number" />
+                     </div>
+                     <div class="popupmaxi__slider">
+                        <div class="item">
+                           <div class="item_minus minus"></div>
+                        </div>
+                        <div class="slider" id="range"></div>
+                        <div class="item">
+                           <div class="item_plus plus"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="popupmaxi__btnblock title title_fz24">
+                     <input type="button" class="btn" value="Min" />
+                     <input type="button" class="btn" value="Max" />
+                     <input type="button" class="btn" value="Bank" />
+                     <input type="button" class="btn" value="1/2 Bank" />
+                  </div>
+                  <div class="popupmaxi__text title title_fz20">
+                     Ваш входной взнос не может быть меньше суммы, с которой вы покинули данный стол. Нажмите кнопку ОК,
+                     чтобы продолжить, или подождите, когда пройдет время ограничения.
+                  </div>
+                  <button class="btn btn__option title title_fz24">
+                     Быстрая посадка и автодокупка
+                     <span></span>
+                  </button>
+               </div>
+               <div class="popupmaxi__column">
+                  <div class="popupmaxi__checkblock">
+                     <div class="checkbox">
+                        <input type="checkbox" name="landing" id="landing" />
+                        <label class="title title_fz20" for="landing">Быстрая посадка</label>
+                     </div>
+                     <button class="btn btn__info title title_fz24">
+                        <span></span>
+                     </button>
+                  </div>
+
+                  <div class="popupmaxi__inputbb title title_fz22">
+                     Автоматически <br />
+                     ставить на стол:
+                     <input class="inputs" type="text" value="2" name="autobet" id="autobet" />
+                     <div class="title title_fz22">ББ</div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="popupmaxi__checkblock">
+                     <div class="checkbox">
+                        <input type="checkbox" name="rebuy" id="rebuy" />
+                        <label class="title title_fz20" for="rebuy">Автодокупка</label>
+                     </div>
+                     <button class="btn btn__info title title_fz24">
+                        <span></span>
+                     </button>
+                  </div>
+                  <div class="popupmaxi__text title title_fz20">
+                     Я хочу пользоваться функцией автоматической докупки и понимаю, что она будет автоматически
+                     пополнять мой счет для обеспечения заданого номера стека.
+                  </div>
+                  <div class="popupmaxi__inputbb title title_fz22">
+                     Если у меня меньше:
+                     <input class="inputs" type="text" value="2" name="less" id="less" />
+                     <div class="title title_fz22">ББ</div>
+                  </div>
+                  <div class="popupmaxi__inputbb title title_fz22">
+                     Автоматически докупать до:
+                     <input class="inputs" type="text" value="2" name="more" id="more" />
+                     <div class="title title_fz22">ББ</div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="popupmaxi__checkblock">
+                     <div class="checkbox">
+                        <input type="checkbox" name="save" id="save" />
+                        <label class="title title_fz20" for="save"
+                           >Сохранить настройки после <br />
+                           выхода из приложения</label
+                        >
+                     </div>
+                     <button class="btn btn__info title title_fz24">
+                        <span></span>
+                     </button>
+                  </div>
+               </div>
+               <div class="popupmaxi__btn-finish">
+                  <button class="btn btn__finish title title_fz24">Ok</button>
+                  <button class="btn btn__finish title title_fz24">Cashier</button>
+                  <button class="btn btn__finish title title_fz24">Cancel</button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <script src="js/jquery-3.6.0.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/jquery.ui.touch-punch.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,103 @@
+// Cursors "+" and "-" styling
+.item {
+   margin: 0 20px;
+   width: var(--plusminus-size);
+   height: var(--plusminus-size);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   &_minus {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 50%;
+      transform: translateX(-50%);
+      width: var(--plusminus-size);
+      height: var(--plusminus-size);
+      cursor: pointer;
+      &:before {
+         content: '';
+         display: block;
+         width: var(--plusminus-size);
+         height: 4px;
+         background-color: white;
+      }
+   }
+   &_plus {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 50%;
+      transform: translateX(-50%);
+      width: var(--plusminus-size);
+      height: var(--plusminus-size);
+      cursor: pointer;
+      &:before {
+         content: '';
+         display: block;
+         width: var(--plusminus-size);
+         height: 4px;
+         background-color: white;
+      }
+      &:after {
+         content: '';
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         display: block;
+         width: 4px;
+         height: var(--plusminus-size);
+         background-color: white;
+      }
+   }
+}
+
+// Slider styling using the library jQuery UI - v1.13.1
+.ui-slider {
+   height: 6px;
+   width: calc(100% - 140px);
+   margin: 0 auto;
+   cursor: pointer;
+   .ui-slider-handle {
+      position: absolute;
+      width: 38px;
+      height: 38px;
+   }
+}
+.ui-widget-content {
+   background: rgba(255, 255, 255, 0.1);
+   box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.19), inset 0px 2px 1px rgba(0, 0, 0, 0.78);
+   border: none;
+}
+.ui-widget {
+   &.ui-widget-content {
+      border: none;
+   }
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+   background: #555 url('../../icons/slider_thumb.png') 50% 50%;
+   box-shadow: 0 1px 20px 1px rgba(255, 255, 255, 0.35), 0px 2px 2px #000;
+   border-radius: 100%;
+   border: none;
+}
+.ui-slider-horizontal {
+   .ui-slider-handle {
+      position: absolute;
+      top: -0.85em;
+      margin-left: -1.1em;
+   }
+   .ui-slider-range {
+      display: none;
+   }
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover {
+   border: none;
+}
+.ui-button:hover,
+.ui-button:focus {
+   border: none;
+}

@@ -1,0 +1,63 @@
+.btn {
+   display: inline-block;
+   width: 100%;
+   height: var(--btn-height);
+   border-radius: 15px;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.0001) 100%),
+      rgba(26, 26, 26, 0.95);
+   box-shadow: 0px 1px 1px 0 #000000;
+   border-left: none;
+   border-right: none;
+   border-color: rgb(75, 74, 74);
+   color: #fff;
+   cursor: pointer;
+   text-align: center;
+   &:active {
+      box-shadow: none;
+      padding-bottom: 3px;
+   }
+   &__option {
+      text-align: left;
+      padding-left: 1.1em;
+      span {
+         display: inline-block;
+         position: relative;
+         &:after {
+            // content: '\00bb';
+            content: '';
+            position: absolute;
+            background: url('../../icons/double-arrow.svg') no-repeat;
+            width: var(--btn-option-arrow-size);
+            height: var(--btn-option-arrow-size);
+            transform: translateY(-75%);
+            left: 0.9rem;
+         }
+      }
+   }
+   &__info {
+      border-radius: 100%;
+      margin-left: 0.7em;
+      flex-shrink: 0;
+      flex-grow: 0;
+      width: var(--btn-info-size);
+      height: var(--btn-info-size);
+      span {
+         display: inline-block;
+         position: relative;
+         &:after {
+            content: '';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('../../icons/info.png') no-repeat center / 38%;
+            width: 1.4em;
+            height: 1.6em;
+         }
+      }
+   }
+
+   &__finish {
+      min-width: 154px;
+      max-width: fit-content;
+   }
+}

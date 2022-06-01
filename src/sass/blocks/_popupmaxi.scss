@@ -1,0 +1,87 @@
+.popupmaxi {
+   &__wrapper {
+      padding-top: 27px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(100px, auto));
+      grid-template-rows: repeat(2, minmax(64px, auto));
+      grid-auto-rows: 1fr;
+      row-gap: 28px;
+   }
+   &__title {
+      padding-bottom: 28px;
+      text-align: center;
+   }
+   &__column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 50px;
+      &:nth-child(2) {
+         border-left: 1px solid rgba(0, 0, 0, 0.8);
+         box-shadow: inset 1px 0px 0px rgba(255, 255, 255, 0.1);
+      }
+   }
+   &__descr {
+      height: 67px;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      background-color: var(--main-color);
+      border-radius: 3px;
+      margin-bottom: 23px;
+      img {
+         padding-right: 15px;
+      }
+   }
+   &__funds {
+      padding-bottom: 20px;
+   }
+   &__inputblock {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+   }
+   &__slider {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__btnblock {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      padding-bottom: 20px;
+   }
+   &__text {
+      padding-bottom: 14px;
+   }
+   &__checkblock {
+      display: flex;
+      align-items: center;
+      margin-bottom: 11px;
+      &:first-child {
+         margin-top: 12px;
+      }
+      &:last-child {
+         margin-bottom: 5px;
+      }
+   }
+   &__inputbb {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      text-align: right;
+      padding-bottom: 10px;
+   }
+   &__btn-finish {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 8px;
+      padding-bottom: 20px;
+   }
+}
